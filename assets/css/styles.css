@@ -1,0 +1,342 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600;700&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(0, 73%, 36%);
+  --dark-color: hsl(0, 50%, 9%);
+  --black-color: hsl(225, 12%, 12%);
+  --white-color: hsl(0, 35%, 93%);
+  --text-color: hsl(5, 24%, 10%);
+  --body-color: hsl(0, 100%, 96%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Montserrat Alternates", sans-serif;
+  --biggest-font-size: 2.5rem;
+  --tiny-font-size: .625rem;
+  --semi-tiny-font-size: 1rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1150px) {
+  :root {
+    --biggest-font-size: 3.5rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  margin-inline: 1.5rem;  
+}
+
+.section{  
+  padding-block: 2.5rem;
+}
+
+.section h1{
+  font-size: var(--biggest-font-size);
+  color: var(--first-color);
+  text-align: center;
+  margin-top: 1rem;
+}
+/*=============== HEADER & NAVBAR ===============*/
+.header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--first-color);
+  z-index: var(--z-fixed);
+  transition: box-shadow .4s;  
+}
+
+.nav__principal{
+  padding: .5rem;
+  color: var(--white-color);
+}
+
+.nav__logo{
+  color: var(--body-white-color);
+  font-family: var(--second-font);
+  font-weight: var(--font-semi-bold);
+  transition: color .4s;
+}
+
+.nav__logo-img{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: .3rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.nav__logo:hover{
+  color: var(--body-color);
+}
+
+.nav{
+  position: fixed;
+  bottom: .50rem;
+  left: 0;
+  right: 0;
+  background-color: var(--white-color);
+  width: 88%;
+  margin-inline: auto;
+  box-shadow: 0px 0px 16px hsla(9, 91%, 31%, 0.773);
+  padding: 1rem 1.75rem;
+  border-radius: 4rem;
+  z-index: var(--z-fixed);
+}
+
+.nav__lista{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__link{
+  color: var(--dark-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+  transition: color .4s;
+  cursor: pointer;
+}
+
+.nav__link:hover{
+  color: var(--first-color);
+}
+
+.nav__link span{
+  font-size: var(--tiny-font-size);
+  font-weight: var(--font-semi-bold);
+}
+
+/*=============== INICIO ===============*/
+
+
+.inicio__container{
+  min-height: 75vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inicio__presentacion{
+  position: relative;
+  display: grid;
+  justify-items: center;
+  justify-self: center;  
+}
+
+.inicio__sombra{
+  width: 300px;
+  height: 320px;
+  background-color: var(--first-color);
+  border-radius: 50%;
+  clip-path: inset(50% 0 0 0);
+  mask-image: linear-gradient(to bottom,
+              var(--first-color) 5%,
+              transparent 100%);
+}
+
+.inicio__presentacion img{
+  position: absolute;
+}
+
+.inicio__logo{
+  width: 230px;
+  top: 3.9rem;
+  left: 2.4rem;
+  mask-image: linear-gradient(to bottom,
+  var(--first-color) 89%,
+  transparent 100%); 
+}
+
+.inicio__tabla{
+  max-width: initial;
+  width: 250px;
+  rotate:90deg;
+  left: 3.5rem;
+  bottom: -1rem;
+}
+
+.inicio__hoja-1,
+.inicio__hoja-2{
+  width: 45px;  
+}
+
+.inicio__hoja-1{
+  left: 3rem;
+  top: 4rem;  
+}
+
+.inicio__hoja-2{
+  right: 1.8rem;
+  bottom: 4rem;  
+  rotate: -15deg;
+}
+
+/* .inicio__pepperoni{
+  width: 55px;  
+  right: 8rem;
+  top: -.5rem;
+  rotate: 90deg;  
+} */
+
+.inicio__tomate{
+  width: 40px;
+  left: 2.4rem;
+  bottom: 4rem;
+  
+}
+
+.inicio__pepperoni{
+  width: 40px;
+  top: 6rem;
+  right: 2rem;
+  rotate: 20deg;  
+}
+
+
+.inicio__datos{
+  padding: 0 1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.inicio__descripcion{
+  color: var(--text-color);
+  margin-bottom: 2rem;
+  font-size: var(--semi-tiny-font-size);
+}
+
+
+/*=============== BUTTON ===============*/
+
+.button{
+  display: inline-flex;
+  justify-content: center;
+  background-color: var(--first-color);
+  color: var(--white-color);
+  padding: .5rem 1rem;
+  font-weight: var(--font-semi-bold);
+  transition: background .4s, box-shadows .4s;
+  border-radius: 2rem;
+}
+
+.button:hover{
+  background-color: var(--dark-color);
+  box-shadow: 0 8px 24px hsla(166, 85%, 8%, .2);
+}
+
+.button-dark{
+  background-color: var(--dark-color);
+  color: var(--white-color);
+}
+
+.button-dark:hover{
+  background-color: var(--dark-color);
+}
+
+/*=============== EXPAND LIST ===============*/
+
+
+
+
+/* Show list */
+
+
+/* Rotate icon */
+
+
+/* Active link */
+
+.active__link{
+  color: var(--first-color);
+}
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For medium devices */
+
+@media screen and (min-width: 350px) {
+  .container{
+    margin-inline: auto;
+  } 
+  .nav{
+    width: 300px;
+  }  
+  
+}
+
+@media screen and (min-width: 450px) {
+  .container{
+    margin-inline: auto;
+  } 
+  .nav{
+    width: 400px;
+  }  
+}
+
+@media screen and (min-width: 650px) {
+  .container{
+    margin-inline: auto;
+  } 
+  .nav{
+    width: 600px;
+  }  
+}
+
+/* For large devices */
+
+@media screen and (min-width: 850px) {
+  .container{
+    margin-inline: auto;
+  }  
+  .nav{
+    width: 800px;
+  } 
+}
