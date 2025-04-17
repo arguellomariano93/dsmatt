@@ -535,12 +535,16 @@ a {
 
 .opciones__pedido{
   display: flex;
-  width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
-  position: absolute;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: .5rem .1rem;
   bottom: .5rem;
+  gap: 1rem;
+  justify-items: center;
+  width: 100%;
 }
 
 .cantidad__pedida{
@@ -551,7 +555,6 @@ a {
   background-color: var(--white-color);
   padding: .5rem .5rem;
   border-radius: 10px;
-  gap: .5rem;
   box-shadow: 6px 6px 16px hsla(9, 91%, 31%, 0.15);
 }
 
@@ -575,23 +578,26 @@ a {
   display: flex;
   flex-direction:row;
   background-color: var(--first-color);
-  padding: .5rem .5rem;
+  padding: 1rem 1rem;
   border-radius: 10px;
   gap: 1rem;
   cursor: pointer;
+  justify-content: space-between;
+  width: 75%;
+  
 }
 
 .agregar__pedido span{
   color: var(--white-color);
-  padding: .5rem 1rem;
-  padding-right: 2rem;
   font-size: var(--semi-tiny-font-size);
+  align-items: start;
+  text-align: left;
 }
 
 .agregar__pedido p{
   color: var(--white-color);
-  padding: .5rem 1rem;
   font-size: var(--semi-tiny-font-size);
+  align-items: end;
 }
 
 .boton__volver{
@@ -757,33 +763,33 @@ a {
 
 /*=================    PEDIDOS     =======================*/
 
-.img__carrito{
-  width: 90px;
-  height: 90px;  
-  /* background-color: chartreuse; */
-  position: relative;
-}
 
-.contenedor__carrito{
-  /* background-color: aqua;  */
+
+.contenedor__carrito{  
   margin-top: 1rem;
 }
 
 .carrito__productos{
   background-color: var(--body-color);
   display: flex;
-  padding: 1rem;
+  padding: .1rem;
   margin: .5rem;
   box-shadow: var(--box-shadow-black);
   border-radius: 1rem;
   justify-content:center;
   border: .1rem solid var(--body-font);
 }
+
+.img__carrito{
+  width: 90px;
+  height: 90px; 
+}
+
 .carrito__producto{
   /* background-color: blueviolet; */
   display: flex;
   width: 100vh;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .carrito__producto-titulo{
   /* background-color: rgb(249, 154, 31); */
@@ -792,13 +798,14 @@ a {
   text-align: left;
   padding: .5rem;
   align-self: center;
-  padding-right: 5rem;
+  align-content: space-between;
+  width: 45%;
 }
 .carrito__producto-titulo small{
-  font-size: var(--semi-tiny-font-size);
+  font-size: var(--tiny-font-size);
 }
 .carrito__producto-titulo h3{
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 .carrito__producto-cantidad{
@@ -875,6 +882,7 @@ a {
   border: none;
   cursor: pointer;  
   width: 100%;
+  font-family: var(--body-font);
 }
 
 
