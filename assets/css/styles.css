@@ -405,51 +405,47 @@ a {
 
 
 .producto__tarjeta{
-  padding: .5rem 1rem;
+  padding: .5rem .5rem;
   position: relative;
   height: var(--header-height);
   display: flex;
-  justify-content: flex-start;
+  justify-content:space-between;
   align-items: center;
-
-  overflow: hidden;
 }
 
 .producto__principal{
   width: 75px;
   height: 75px;
-  position: relative;
-  top: .1rem;
 }
 
 .producto__dato{
   background-color:transparent;
+  width: 65%;
+  margin-left: .5rem;
 }
 
 .producto__nombre{
-  font-size: var(--semi-tiny-font-size);
-  padding: 0 .5rem;
-  padding-bottom: 1rem;
+  font-size: var(--semi-tiny-font-size);  
   color:var(--first-color);
-
 }
 
 .producto__precio{
   font-size: var(--semi-tiny-font-size);
-  padding: 1rem .5rem;
 }
 
 .producto__boton{
   color: var(--first-color);
   border-radius: 50%;
-  position: absolute;
-  right: 1rem;
+  position: relative;
   width: 45px;
   height: 45px;
   cursor: pointer;
   font-size: 1.5rem;
   border: none;
   background-color: var(--body-color);
+  box-shadow: var(--box-shadow-black);
+  justify-self: flex-end;
+
 }
 
 .fin__productos{
@@ -578,13 +574,12 @@ a {
   display: flex;
   flex-direction:row;
   background-color: var(--first-color);
-  padding: 1rem 1rem;
+  padding: 1rem .5rem;
   border-radius: 10px;
-  gap: 1rem;
+  gap: .5rem;
   cursor: pointer;
   justify-content: space-between;
-  width: 75%;
-  
+  width: 75%;  
 }
 
 .agregar__pedido span{
@@ -602,7 +597,7 @@ a {
 
 .boton__volver{
   position: absolute;
-  right: 1rem;
+  right: .5rem;
   color: var(--white-color);
   font-size: 1.5rem;
   top: .2rem;
@@ -613,13 +608,18 @@ a {
 /*=============== BREAKPOINTS ===============*/
 /* For medium devices */
 
-@media screen and (min-width: 350px) {
+@media screen and (min-width: 320px) {
   .container{
     margin-inline: auto;
   }
   .nav{
     width: 300px;
   }
+
+  .tab-navigation{
+    left: -23px;
+  }
+
 
 }
 
@@ -781,8 +781,9 @@ a {
 }
 
 .img__carrito{
-  width: 90px;
-  height: 90px; 
+  width: 75px;
+  height: 75px;
+  justify-content: center;
 }
 
 .carrito__producto{
@@ -792,14 +793,12 @@ a {
   justify-content: space-between;
 }
 .carrito__producto-titulo{
-  /* background-color: rgb(249, 154, 31); */
   display: flex;
   flex-direction: column;
-  text-align: left;
-  padding: .5rem;
-  align-self: center;
-  align-content: space-between;
-  width: 45%;
+  align-items: flex-start;
+  justify-content: center;
+  width: 60%;
+  margin-left: 1rem;
 }
 .carrito__producto-titulo small{
   font-size: var(--tiny-font-size);
@@ -816,12 +815,15 @@ a {
 .carrito__producto-seleccionado{
   /* background-color: rgb(253, 139, 255); */
   position: relative;
-  justify-content: center;
-  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content:space-around;
-  margin: .5rem;
+  padding: .5rem;  
+  min-width: 40%;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-self: flex-end;
+  align-content: flex-end;
+  
   /* right: 1rem;
   top: 2.5rem;  */
 }
@@ -834,13 +836,15 @@ a {
 }
 .cantidad__seleccionada{
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap:initial;
   /* background-color: aqua; */
   gap: 1rem;
   padding: .5rem;
   justify-content: space-between;
   border-radius: 1rem;
   box-shadow: var(--box-shadow-black);
+  width: 95px;
+  align-self: flex-end;
 }
 
 .carrito__acciones{

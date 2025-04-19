@@ -4,7 +4,7 @@
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
 const sections = document.querySelectorAll('section[id]');
-console.log(sections)
+
 
     
 const scrollActive = () =>{
@@ -26,6 +26,13 @@ const scrollActive = () =>{
 	})
 }
 window.addEventListener('scroll', scrollActive)
+
+
+/*=============== CLICK SECTIONS ACTIVE LINK ===============*/
+
+
+
+
 
 
 
