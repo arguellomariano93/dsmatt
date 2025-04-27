@@ -69,6 +69,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+}
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   margin-inline: 1.5rem;
@@ -383,7 +387,7 @@ a {
 .titulo__menu{
   padding: 1rem;
   color: var(--first-color);
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 
@@ -416,6 +420,7 @@ a {
 .producto__principal{
   width: 75px;
   height: 75px;
+  object-fit:contain;
 }
 
 .producto__dato{
@@ -449,7 +454,7 @@ a {
 }
 
 .fin__productos{
-  padding-bottom: 6rem;
+  padding-bottom: 10rem;
 }
 
 .producto__fin{
@@ -702,15 +707,15 @@ a {
   cursor: pointer;
   user-select: none;
   background: var(--white-color);
-  transition: background .5s;
-  
+  transition: background .5s;  
 }
 
 .tab-btn a{
   font-size: 1em;
   font-weight: 400;
   padding: 15px 20px;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   color: var(--text-color);
 }
@@ -725,7 +730,7 @@ a {
 .tab-btn a:hover{
   background-color: var(--body-color);
   border-bottom: 2px solid var(--body-color); 
-  color: var(--text-color);  
+  color: var(--first-color);  
   
 }
 
@@ -798,7 +803,7 @@ a {
   align-items: flex-start;
   justify-content: center;
   width: 60%;
-  margin-left: 1rem;
+  margin-left: .5rem;
 }
 .carrito__producto-titulo small{
   font-size: var(--tiny-font-size);
@@ -830,21 +835,29 @@ a {
 
 .carrito__producto-seleccionado p{
   /* background-color: rgb(182, 255, 156); */
-  font-size: 1rem;
+  font-size: .8rem;
   font-weight: 400;
   padding: .5rem;
+  color: var(--black-color);
 }
 .cantidad__seleccionada{
   display: flex;
-  flex-wrap:initial;
-  /* background-color: aqua; */
-  gap: 1rem;
+   /* background-color: aqua; */
+  gap: .5rem;
   padding: .5rem;
   justify-content: space-between;
   border-radius: 1rem;
   box-shadow: var(--box-shadow-black);
   width: 95px;
   align-self: flex-end;
+}
+
+.cantidad__seleccionada i{
+  font-size: 1rem;
+  /* justify-content: center; */
+  /* align-self: center; */
+  color: var(--black-color);
+  
 }
 
 .carrito__acciones{
@@ -903,6 +916,12 @@ a {
 }
 
 .seguir__comprando{
+  background-color: var(--white-color);
+  color: var(--text-color);
+  box-shadow: var(--box-shadow-black);
+}
+
+.botones__accion-volver{
   background-color: var(--white-color);
   color: var(--text-color);
   box-shadow: var(--box-shadow-black);

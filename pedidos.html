@@ -60,130 +60,141 @@
          </ul>         
       </nav> -->
 
-      <div class="section oculto">
+      <div class="section oculto" id="carrito-vacio">
          <h2>Pedidos</h2>
-         <span>Tu carrito esta vacio.</span>
+         <span>Tu carrito esta vacio.</span>   
+         <div class="carrito__acciones" id="carrito-volver">
+            <div class="botones__acciones-carrito">                 
+               <a href="/menu.html">
+                  <button class="seguir__comprando">
+                     Seguir comprando
+                  </button>
+               </a>
+            </div>
+         </div>
       </div>
-      <div class="section">
-         <div class="contenedor__carrito">
-            <div class="carrito__productos">
-               <div class="carrito__producto">
-                  <div class="img__carrito-seleccionado">
-                     <img src="/assets/img/pizza-01.png" alt="imagen" class="img__carrito">
-                  </div>                                    
-                  <div class="carrito__producto-titulo">                     
-                     <small>Pizza</small>
-                     <h3>Napolitana</h3>
-                  </div>                  
-                  <div class="carrito__producto-seleccionado">                     
-                     <p>$ 39466,50</p>
-                     <div class="cantidad__seleccionada">
-                        <i class="ri-delete-bin-5-fill"></i>
-                        <span>1</span> 
-                        <i class="ri-add-large-fill"></i>
+      <div class="section" id="carrito-con-productos">
+         <div class="contenedorDeCarrito" id="carrito-productos">
+            <!-- <div class="contenedor__carrito">
+               <div class="carrito__productos">
+                  <div class="carrito__producto">
+                     <div class="img__carrito-seleccionado">
+                        <img src="/assets/img/pizza-01.png" alt="imagen" class="img__carrito">
+                     </div>                                    
+                     <div class="carrito__producto-titulo">                     
+                        <small>Pizza</small>
+                        <h3>Napolitana</h3>
+                     </div>                  
+                     <div class="carrito__producto-seleccionado">                     
+                        <p>$ 39466,50</p>
+                        <div class="cantidad__seleccionada">
+                           <i class="ri-delete-bin-5-fill"></i>
+                           <span>1</span> 
+                           <i class="ri-add-large-fill"></i>
+                        </div>                     
                      </div>                     
-                  </div>                     
-                  </div>                 
-               </div>
-         </div>
+                     </div>                 
+                  </div>
+            </div>
 
-         <div class="contenedor__carrito">
-            <div class="carrito__productos">
-               <div class="carrito__producto">
-                  <div class="img__carrito-seleccionado">
-                     <img src="/assets/img/pizza-01.png" alt="imagen" class="img__carrito">
-                  </div>                                    
-                  <div class="carrito__producto-titulo">                     
-                     <small>Pizza</small>
-                     <h3>Napolitana</h3>
-                  </div>                  
-                  <div class="carrito__producto-seleccionado">                     
-                     <p>$ 39466,50</p>
-                     <div class="cantidad__seleccionada">
-                        <i class="ri-delete-bin-5-fill"></i>
-                        <span>1</span> 
-                        <i class="ri-add-large-fill"></i>
+            <div class="contenedor__carrito">
+               <div class="carrito__productos">
+                  <div class="carrito__producto">
+                     <div class="img__carrito-seleccionado">
+                        <img src="/assets/img/pizza-01.png" alt="imagen" class="img__carrito">
+                     </div>                                    
+                     <div class="carrito__producto-titulo">                     
+                        <small>Pizza</small>
+                        <h3>Napolitana</h3>
+                     </div>                  
+                     <div class="carrito__producto-seleccionado">                     
+                        <p>$ 39466,50</p>
+                        <div class="cantidad__seleccionada">
+                           <i class="ri-delete-bin-5-fill"></i>
+                           <span>1</span> 
+                           <i class="ri-add-large-fill"></i>
+                        </div>                     
                      </div>                     
-                  </div>                     
-                  </div>                 
-               </div>
-         </div>
+                     </div>                 
+                  </div>
+            </div>
 
-         <div class="contenedor__carrito">
-            <div class="carrito__productos">
-               <div class="carrito__producto">
-                  <div class="img__carrito-seleccionado">
-                     <img src="/assets/img/pizza-01.png" alt="imagen" class="img__carrito">
-                  </div>                                    
-                  <div class="carrito__producto-titulo">                     
-                     <small>Hamburguesa</small>
-                     <h3>Completa con papas fritas</h3>
-                  </div>                  
-                  <div class="carrito__producto-seleccionado">                     
-                     <p>$ 39466,50</p>
-                     <div class="cantidad__seleccionada">
-                        <i class="ri-delete-bin-5-fill"></i>
-                        <span>1</span> 
-                        <i class="ri-add-large-fill"></i>
+            <div class="contenedor__carrito">
+               <div class="carrito__productos">
+                  <div class="carrito__producto">
+                     <div class="img__carrito-seleccionado">
+                        <img src="/assets/img/pizza-01.png" alt="imagen" class="img__carrito">
+                     </div>                                    
+                     <div class="carrito__producto-titulo">                     
+                        <small>Hamburguesa</small>
+                        <h3>Completa con papas fritas</h3>
+                     </div>                  
+                     <div class="carrito__producto-seleccionado">                     
+                        <p>$ 39466,50</p>
+                        <div class="cantidad__seleccionada">
+                           <i class="ri-delete-bin-5-fill"></i>
+                           <span>1</span> 
+                           <i class="ri-add-large-fill"></i>
+                        </div>                     
                      </div>                     
-                  </div>                     
-                  </div>                 
-               </div>
-         </div>
+                     </div>                 
+                  </div>
+            </div>
 
-         <div class="contenedor__carrito">
-            <div class="carrito__productos">
-               <div class="carrito__producto">
-                  <div class="img__carrito-seleccionado">
-                     <img src="/assets/img/pizza-01.png" alt="imagen" class="img__carrito">
-                  </div>                                    
-                  <div class="carrito__producto-titulo">                     
-                     <small>Pizza</small>
-                     <h3>Napolitana</h3>
-                  </div>                  
-                  <div class="carrito__producto-seleccionado">                     
-                     <p>$ 39466,50</p>
-                     <div class="cantidad__seleccionada">
-                        <i class="ri-delete-bin-5-fill"></i>
-                        <span>1</span> 
-                        <i class="ri-add-large-fill"></i>
+            <div class="contenedor__carrito">
+               <div class="carrito__productos">
+                  <div class="carrito__producto">
+                     <div class="img__carrito-seleccionado">
+                        <img src="/assets/img/pizza-01.png" alt="imagen" class="img__carrito">
+                     </div>                                    
+                     <div class="carrito__producto-titulo">                     
+                        <small>Pizza</small>
+                        <h3>Napolitana</h3>
+                     </div>                  
+                     <div class="carrito__producto-seleccionado">                     
+                        <p>$ 39466,50</p>
+                        <div class="cantidad__seleccionada">
+                           <i class="ri-delete-bin-5-fill"></i>
+                           <span>1</span> 
+                           <i class="ri-add-large-fill"></i>
+                        </div>                     
                      </div>                     
-                  </div>                     
-                  </div>                 
-               </div>
-         </div>
+                     </div>                 
+                  </div>
+            </div>
 
-         <div class="contenedor__carrito">
-            <div class="carrito__productos">
-               <div class="carrito__producto">
-                  <div class="img__carrito-seleccionado">
-                     <img src="/assets/img/pizza-01.png" alt="imagen" class="img__carrito">
-                  </div>                                    
-                  <div class="carrito__producto-titulo">                     
-                     <small>Pizza</small>
-                     <h3>Napolitana</h3>
-                  </div>                  
-                  <div class="carrito__producto-seleccionado">                     
-                     <p>$ 39466,50</p>
-                     <div class="cantidad__seleccionada">
-                        <i class="ri-delete-bin-5-fill"></i>
-                        <span>1</span> 
-                        <i class="ri-add-large-fill"></i>
+            <div class="contenedor__carrito">
+               <div class="carrito__productos">
+                  <div class="carrito__producto">
+                     <div class="img__carrito-seleccionado">
+                        <img src="/assets/img/pizza-01.png" alt="imagen" class="img__carrito">
+                     </div>                                    
+                     <div class="carrito__producto-titulo">                     
+                        <small>Pizza</small>
+                        <h3>Napolitana</h3>
+                     </div>                  
+                     <div class="carrito__producto-seleccionado">                     
+                        <p>$ 39466,50</p>
+                        <div class="cantidad__seleccionada">
+                           <i class="ri-delete-bin-5-fill"></i>
+                           <span>1</span> 
+                           <i class="ri-add-large-fill"></i>
+                        </div>                     
                      </div>                     
-                  </div>                     
-                  </div>                 
+                     </div>                 
+                  </div>
+            </div> -->
+
+            <div class="contenedor__carrito-fin">
+               <div class="carrito__productos-fin">                              
                </div>
+            </div>
          </div>
 
-         <div class="contenedor__carrito-fin">
-            <div class="carrito__productos-fin">                              
-               </div>
-         </div>
-
-         <div class="carrito__acciones">
+         <div class="carrito__acciones" id="carrito-acciones">
             <div class="total__general">
                <p>Total</p>
-               <p>$ 35.095,00</p>
+               <p id="monto-total">$ 35.095,00</p>
             </div>
             <div class="botones__acciones-carrito">              
                <a href="/index.html" >
@@ -212,7 +223,9 @@
       <!--=============== SWIPER JS ===============-->
       <script src="assets/js/swiper-bundle.min.js"></script>
       
-      <!--=============== MAIN JS ===============-->
-      <script src="assets/js/main.js"></script>
+      <!--=============== CARRITO JS ===============-->
+      
+      
+      <script src="assets/js/carrito.js"></script>
    </body>
 </html>

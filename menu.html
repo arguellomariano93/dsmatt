@@ -53,7 +53,7 @@
                
                <a href="pedidos.html" class="nav__link">
                   <i class="ri-shopping-cart-fill"></i>
-                  <span class="numero__pedidos">0</span>
+                  <span class="numero__pedidos" id="numero-pedidos">0</span>
                   <span>Pedidos</span>
                </a>              
             </li>
@@ -112,46 +112,12 @@
          <!--==================== BARRA MENU NUEVA ====================-->
          <section class="main-container" >
             <div class="tab-nav-bar" id="menu-nuevo">
-                <div class="tab-navigation">
+                <div class="tab-navigation" >
                     <i class="uil uil-angle-left left-btn"></i>
                     <i class="uil uil-angle-right right-btn"></i>
-                    <ul class="tab-menu">
-                     <li class="tab-btn">
-                        <a href="#menu-pizzas" class="tab-btn active">Pizzas </a>   
-                     </li>
-                     <li class="tab-btn">
-                        <a href="#menu-hamburguesas" class="tab-btn">Hamburguesas </a>  
-                     </li>
-                     <li class="tab-btn">
-                        <a href="#menu-pizzas" class="tab-btn ">Pizzas </a>   
-                     </li>
-                     <li class="tab-btn">
-                        <a href="#menu-hamburguesas" class="tab-btn">Hamburguesas </a>  
-                     </li>
-                     <li class="tab-btn">
-                        <a href="#menu-pizzas" class="tab-btn ">Pizzas </a>   
-                     </li>
-                     <li class="tab-btn">
-                        <a href="#menu-hamburguesas" class="tab-btn">Hamburguesas </a>  
-                     </li>
-                     <li class="tab-btn">
-                        <a href="#menu-pizzas" class="tab-btn ">Pizzas </a>   
-                     </li>
-                     <li class="tab-btn">
-                        <a href="#menu-hamburguesas" class="tab-btn">Hamburguesas </a>  
-                     </li>
-                     <li class="tab-btn">
-                        <a href="#menu-pizzas" class="tab-btn ">Pizzas </a>   
-                     </li>
-                     <li class="tab-btn">
-                        <a href="#menu-hamburguesas" class="tab-btn">Hamburguesas </a>  
-                     </li>
-                     <li class="tab-btn">
-                        <a href="#menu-pizzas" class="tab-btn ">Pizzas </a>   
-                     </li>
-                     <li class="tab-btn">
-                        <a href="#menu-hamburguesas" class="tab-btn">Hamburguesas </a>  
-                     </li>                     
+                    <ul class="tab-menu" id="listadoDeMenues">
+                     
+                                       
                     </ul>
                 </div>
             </div>
@@ -161,9 +127,9 @@
       </main>       
       <!--==================== PRODUCTOS ====================-->
       
-      <div class="secciones" id="secciones">
+      <div class="section" id="contenedor-productos">
                   
-         <section class="menu-pizzas section " id="menu-pizzas">
+         <!-- <section class="menu-pizzas section " id="menu-pizzas">
             <div class="titulo__menu">
                <h2>PIZZAS</h2>
             </div>
@@ -171,8 +137,6 @@
             <article class="producto__tarjeta producto">               
                <div class="producto__imagen">
                <div class="producto__sombra"></div>
-               <!-- <img src="assets/img/ice-img.png" alt="imagen" class="products__ice-1">
-               <img src="assets/img/ice-img.png" alt="imagen" class="products__ice-2"> -->
                <img src="assets/img/pizza-01.png" alt="imagen" class="producto__principal">
                </div>        
                <div class="producto__dato">
@@ -187,8 +151,7 @@
             <article class="producto__tarjeta producto">               
                <div class="producto__imagen">
                   <div class="producto__sombra"></div>
-                  <!-- <img src="assets/img/ice-img.png" alt="imagen" class="products__ice-1">
-                  <img src="assets/img/ice-img.png" alt="imagen" class="products__ice-2"> -->
+                  
                   <img src="assets/img/pizza-02.png" alt="imagen" class="producto__principal">
                </div>        
                <div class="producto__dato">
@@ -203,8 +166,7 @@
             <article class="producto__tarjeta producto">               
                <div class="producto__imagen">
                   <div class="producto__sombra"></div>
-                  <!-- <img src="assets/img/ice-img.png" alt="imagen" class="products__ice-1">
-                  <img src="assets/img/ice-img.png" alt="imagen" class="products__ice-2"> -->
+                  
                   <img src="assets/img/pizza-03.png" alt="imagen" class="producto__principal">
                </div>        
                <div class="producto__dato">
@@ -219,8 +181,7 @@
             <article class="producto__tarjeta producto">               
                <div class="producto__imagen">
                   <div class="producto__sombra"></div>
-                  <!-- <img src="assets/img/ice-img.png" alt="imagen" class="products__ice-1">
-                  <img src="assets/img/ice-img.png" alt="imagen" class="products__ice-2"> -->
+                  
                   <img src="assets/img/pizza-04.png" alt="imagen" class="producto__principal">
                </div>        
                <div class="producto__dato">
@@ -231,9 +192,9 @@
                   <i class="ri-shopping-cart-fill"></i>
                </button>               
             </article>
-         </section>
+         </section> -->
 
-         <section class="menu-hamburguesas section " id="menu-hamburguesas">
+         <!-- <section class="menu-hamburguesas section " id="menu-hamburguesas">
             <div class="titulo__menu">
                <h2>HAMBURGUESAS</h2>
             </div>
@@ -241,8 +202,7 @@
             <article class="producto__tarjeta producto">               
                <div class="producto__imagen">
                   <div class="producto__sombra"></div>
-                  <!-- <img src="assets/img/ice-img.png" alt="imagen" class="products__ice-1">
-                  <img src="assets/img/ice-img.png" alt="imagen" class="products__ice-2"> -->
+                  
                   <img src="assets/img/pizza-01.png" alt="imagen" class="producto__principal">
                </div>        
                <div class="producto__dato">
@@ -256,8 +216,7 @@
             <article class="producto__tarjeta producto">               
                <div class="producto__imagen">
                   <div class="producto__sombra"></div>
-                  <!-- <img src="assets/img/ice-img.png" alt="imagen" class="products__ice-1">
-                  <img src="assets/img/ice-img.png" alt="imagen" class="products__ice-2"> -->
+                  
                   <img src="assets/img/pizza-02.png" alt="imagen" class="producto__principal">
                </div>        
                <div class="producto__dato">
@@ -272,8 +231,7 @@
             <article class="producto__tarjeta producto">               
                <div class="producto__imagen">
                   <div class="producto__sombra"></div>
-                  <!-- <img src="assets/img/ice-img.png" alt="imagen" class="products__ice-1">
-                  <img src="assets/img/ice-img.png" alt="imagen" class="products__ice-2"> -->
+                  
                   <img src="assets/img/pizza-03.png" alt="imagen" class="producto__principal">
                </div>        
                <div class="producto__dato">
@@ -288,8 +246,7 @@
             <article class="producto__tarjeta producto">               
                <div class="producto__imagen">
                   <div class="producto__sombra"></div>
-                  <!-- <img src="assets/img/ice-img.png" alt="imagen" class="products__ice-1">
-                  <img src="assets/img/ice-img.png" alt="imagen" class="products__ice-2"> -->
+                  
                   <img src="assets/img/pizza-04.png" alt="imagen" class="producto__principal">
                </div>        
                <div class="producto__dato">
@@ -300,11 +257,10 @@
                   <i class="ri-shopping-cart-fill"></i>
                </button>               
             </article>
-         </section>
+         </section> -->
 
-         <section class="section fin__productos">
-            <div class="titulo__menu">
-               <!-- <h2>¡Has llegado al final de la lista!</h2> -->
+         <!-- <section class="section fin__productos">
+            <div class="titulo__menu">               
             </div>
             <article class="producto__tarjeta producto__fin">        
                      
@@ -313,11 +269,9 @@
                   <h3>¡Has llegado al final de la lista!</h3>
                   <span>Recorré nuestras categorías y elegí lo que más te guste</span>                  
                </div>   
-               <!-- <button class="producto__boton">
-                  <i class="ri-shopping-cart-fill"></i>
-               </button>                -->
+               
             </article>
-         </section>
+         </section> -->
       </div>
 
 
@@ -368,5 +322,6 @@
       
       <!--=============== MAIN JS ===============-->
       <script src="assets/js/main.js"></script>
+
    </body>
 </html>
