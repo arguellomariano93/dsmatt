@@ -686,7 +686,7 @@ button {
 
 .tab-btn a:hover{
   background-color: var(--body-color);
-  border-bottom: 2px solid var(--body-color); 
+  /* border-bottom: 2px solid var(--body-color);  */
   color: var(--first-color);  
   
 }
