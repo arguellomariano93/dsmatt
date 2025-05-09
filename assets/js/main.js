@@ -340,7 +340,7 @@ function cargarProductos() {
         const { nombre, productos } = categorias[categoriaId];
 
         const section = document.createElement("section");
-        section.classList.add("section", categoriaId);
+        section.classList.add("section", categoriaId, "secciones");
         section.id = categoriaId; // Asignar id basado en el id de la categoría
 
         const titulo = document.createElement("h2");
@@ -471,7 +471,7 @@ const scrollActive = () =>{
 
 	sections.forEach(current =>{
 		const sectionHeight = current.offsetHeight,
-			  sectionTop = current.offsetTop - 60,
+			  sectionTop = current.offsetTop - 78,
 			  sectionId = current.getAttribute('id'),
 			  sectionsClass = document.querySelector('.tab-navigation a[href*=' + sectionId + ']')
               //console.log(sectionId);
@@ -480,6 +480,7 @@ const scrollActive = () =>{
 
 		if(scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight){
 			sectionsClass.classList.add('active');
+            sectionsClass.focus();
             
 		}else{
 			sectionsClass.classList.remove('active')

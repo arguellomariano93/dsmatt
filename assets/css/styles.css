@@ -75,11 +75,15 @@ button {
 }
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  margin-inline: 1.5rem;
+  margin-inline: 1rem;
 }
 
 .section{
-  padding-top: 2rem;
+  padding-top: 3.8rem; 
+}
+.section:first-child{
+  /* background-color: aquamarine; */
+   margin-top: -3rem;
 }
 
 .section h1{
@@ -609,54 +613,6 @@ button {
   cursor: pointer;
 }
 
-
-/*=============== BREAKPOINTS ===============*/
-/* For medium devices */
-
-@media screen and (min-width: 320px) {
-  .container{
-    margin-inline: auto;
-  }
-  .nav{
-    width: 300px;
-  }
-
-  .tab-navigation{
-    left: -23px;
-  }
-
-
-}
-
-@media screen and (min-width: 450px) {
-  .container{
-    margin-inline: auto;
-  }
-  .nav{
-    width: 400px;
-  }
-}
-
-@media screen and (min-width: 650px) {
-  .container{
-    margin-inline: auto;
-  }
-  .nav{
-    width: 600px;
-  }
-}
-
-/* For large devices */
-
-@media screen and (min-width: 850px) {
-  .container{
-    margin-inline: auto;
-  }
-  .nav{
-    width: 800px;
-  }
-}
-
 /*=================    BARRA MENU NUEVA     =======================*/
 
 .main-container{
@@ -938,4 +894,54 @@ button {
 .contenedor__carrito-fin{
   padding: 5rem;
   margin-top: 2.5rem;
+}
+
+
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For medium devices */
+
+@media screen and (min-width: 320px) {
+  .container{
+    margin-inline: auto;
+  }
+  .nav{
+    width: 300px;
+  }
+
+  .tab-navigation{
+    /* left: -23px; */
+  }
+
+
+}
+
+@media screen and (min-width: 450px) {
+  .container{
+    margin-inline: auto;
+  }
+  .nav{
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .container{
+    margin-inline: auto;
+  }
+  .nav{
+    width: 600px;
+  }
+}
+
+/* For large devices */
+
+@media screen and (min-width: 850px) {
+  .container{
+    margin-inline: auto;
+  }
+  .nav{
+    width: 800px;
+  }
 }
