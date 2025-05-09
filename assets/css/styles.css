@@ -691,10 +691,12 @@ button {
   
 }
 
-.tab-btn.active{
+ .active{
   background-color: var(--white-color);
   border-bottom: 2px solid var(--first-color);
   color: var(--first-color);
+  box-shadow: none;
+  user-select: none;
 }
 
 

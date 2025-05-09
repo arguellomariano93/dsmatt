@@ -481,7 +481,7 @@ const scrollActive = () =>{
 		if(scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight){
 			sectionsClass.scrollIntoView({beahvior : "smooth", block: "center"});
             sectionsClass.classList.add('active');
-            sectionsClass.focus();
+            //sectionsClass.focus();
             
 		}else{
 			sectionsClass.classList.remove('active')
