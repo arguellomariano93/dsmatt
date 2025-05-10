@@ -10,6 +10,8 @@
       <!--=============== REMIXICONS ===============-->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
 
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
       <!--=============== CSS ===============-->
       <link rel="stylesheet" href="assets/css/styles.css">
 
@@ -61,13 +63,17 @@
       </nav> -->
 
       <div class="section oculto" id="carrito-vacio">
-         <h2>Pedidos</h2>
-         <span>Tu carrito esta vacio.</span>   
+         
+         <div class="img__carrito-vacio">
+            <img src="/assets/img/carrito-vacio.png" class="img-carrito" alt="carrito-vacio">
+            <h2>Tu carrito esta vacio.</h2>
+            <span>Recorré nuestro menú y elegí lo que más te guste!</span>
+         </div>  
          <div class="carrito__acciones" id="carrito-volver">
             <div class="botones__acciones-carrito">                 
                <a href="/menu.html">
-                  <button class="seguir__comprando">
-                     Seguir comprando
+                  <button class="seguir__comprando active">
+                     Comenzar pedido
                   </button>
                </a>
             </div>
@@ -227,5 +233,6 @@
       
       
       <script src="assets/js/carrito.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
    </body>
 </html>

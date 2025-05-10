@@ -190,7 +190,21 @@ function restarCantidadCarrito(e){
 
     localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarritos));
 
-    } else {        
+    } else {   
+        Toastify({
+            text: "Producto eliminado",
+            duration: 1500,
+            //close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "right", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            className: "delettoastify",
+            offset: {
+                x: '0rem', // horizontal axis - can be a number or a string indicating unity. eg: '2em'
+                y: '1.5rem' // vertical axis - can be a number or a string indicating unity. eg: '2em'
+              },
+            onClick: function(){} // Callback after click
+          }).showToast();     
         const index = productosEnCarritos.findIndex(producto => producto.id === idBoton);        
         productosEnCarritos.splice(index, 1);
         cargarProductosCarrito();

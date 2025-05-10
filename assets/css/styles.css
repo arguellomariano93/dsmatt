@@ -674,12 +674,15 @@ button {
   display: flex;
   flex-direction: column;
   text-decoration: none;
-  color: var(--text-color);
+  /* color: var(--text-color); */
 }
+
 .tab-btn.active a{
-  color: var(--first-color);
-  
+  background-color: var(--white-color);
+  border-bottom: 2px solid var(--first-color);
+  color: lime; 
 }
+
 .tab-menu.tab-menu.dragging .tab-btn{
   pointer-events: none;
 }
@@ -695,9 +698,7 @@ button {
   background-color: var(--white-color);
   border-bottom: 2px solid var(--first-color);
   color: var(--first-color);
-  box-shadow: none;
-  user-select: none;
-}
+  }
 
 
 
@@ -710,7 +711,7 @@ button {
 }
 
 .left-btn{
-  left: 0;
+  left: -.9rem;
   background: linear-gradient(to left, transparent, var(--body-color) 80%);
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
@@ -718,7 +719,7 @@ button {
 }
 
 .right-btn{
-  right: 0;
+  right: -.9rem;
   background: linear-gradient(to right, transparent, var(--body-color) 80%);
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -890,6 +891,16 @@ button {
   color: var(--text-color);
 }
 
+.seguir__comprando.active{
+  background-color: var(--first-color);
+  color: var(--white-color);  
+  box-shadow: var(--box-shadow-black);
+}
+
+.seguir__comprando.active:hover{
+  color: var(--first-color);  
+}
+
 .seguir__comprando:hover{
   background-color: var(--body-color);
 }
@@ -897,6 +908,33 @@ button {
 .contenedor__carrito-fin{
   padding: 5rem;
   margin-top: 2.5rem;
+}
+
+.img__carrito-vacio{
+  /* background-color: lime; */
+  position: relative;
+  justify-self: center;
+  text-align: center;
+  margin: 1rem;
+  max-width: 100%;
+}
+
+.img-carrito{
+  max-width: 230px;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  justify-self: center;
+}
+.img__carrito-vacio h2{
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.img__carrito-vacio span{
+  text-align: center;
+  font-size: .8rem;
 }
 
 
@@ -948,3 +986,24 @@ button {
     width: 800px;
   }
 }
+
+
+.addtoastify{
+ color: var(--white-color); 
+ padding-block: 1rem;
+ border-radius: 2rem;
+ background: linear-gradient(to right, var(--first-color), var(--first-color));
+ font-size: .8rem;
+ font-weight: 800;
+ box-shadow: var(--box-shadow-first);
+}
+
+.delettoastify{
+  color: var(--white-color); 
+  padding-block: 1rem;
+  border-radius: 2rem;
+  background: linear-gradient(to right, var(--first-color), var(--first-color));
+  font-size: .8rem;
+  font-weight: 800;
+  box-shadow: var(--box-shadow-first);
+ }
