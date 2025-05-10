@@ -8,10 +8,10 @@
   --first-color: hsl(0, 73%, 36%);
   --light-color: hsla(0, 98%, 51%, 0.942);
   --dark-color: hsl(0, 50%, 9%);
-  --black-color: hsl(225, 12%, 12%);
-  --white-color: hsl(0, 35%, 93%);
+  --black-color: hsl(60, 8%, 8%);
+  --white-color: hsl(60, 50%, 93%);
   --text-color: hsl(5, 24%, 10%);
-  --body-color: hsl(0, 100%, 96%);
+  --body-color: hsla(60, 100%, 54%, 0.199);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -80,6 +80,10 @@ button {
 
 .section{
   padding-top: 3.8rem; 
+}
+
+.section-carrito{
+  padding-top: 2.3rem; 
 }
 .section:first-child{
   /* background-color: aquamarine; */
@@ -835,11 +839,24 @@ button {
 .total__general{ 
   display: flex;
   justify-content: space-between;
+  /* background-color: blue; */
+  padding: .5rem;
 }
 
+.precio-total{
+  display: flex;
+  flex-direction: column;
+}
 .total__general p{
   font-size: 1.4rem;
-  padding: 1rem;
+  /* background-color: lime; */
+}
+
+#sin-envio{
+  font-size: var(--tiny-font-size);
+  /* background-color: aqua; */
+  text-align: center;
+
 }
 
 .total__general p:first-child{

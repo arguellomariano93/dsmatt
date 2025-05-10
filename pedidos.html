@@ -18,6 +18,9 @@
       <!--=============== SWIPER CSS ===============-->
       <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
+      
+      <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.21.0/dist/sweetalert2.min.css" rel="stylesheet">
+
       <title>DS Matt</title>
    </head>
    <body>
@@ -79,7 +82,7 @@
             </div>
          </div>
       </div>
-      <div class="section" id="carrito-con-productos">
+      <div class="section-carrito" id="carrito-con-productos">
          <div class="contenedorDeCarrito" id="carrito-productos">
             <!-- <div class="contenedor__carrito">
                <div class="carrito__productos">
@@ -200,14 +203,19 @@
          <div class="carrito__acciones" id="carrito-acciones">
             <div class="total__general">
                <p>Total</p>
-               <p id="monto-total">$ 35.095,00</p>
+               <div class="precio-total">
+                  <p id="monto-total">$ 35.095,00</p>
+                  <p id="sin-envio">(No incluye el envío)</p>
+               </div>
+               
             </div>
             <div class="botones__acciones-carrito">              
-               <a href="/index.html" >
-                  <button class="realizar__pedido">
+              <a href="/menu.html"></a>
+                  <button class="realizar__pedido" id="carrito-acciones-comprar">
                      Realizar pedido
                   </button>
-               </a>                  
+                  </a>
+                              
                <a href="/menu.html">
                   <button class="seguir__comprando">
                      Seguir comprando
@@ -234,5 +242,8 @@
       
       <script src="assets/js/carrito.js"></script>
       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.21.0/dist/sweetalert2.all.min.js"></script>
+
    </body>
 </html>

@@ -283,7 +283,7 @@ const productosArray = [
     {
         id: "empanada-carne-frita",
         titulo: "De Carne Fritas",
-        imagen: "./assets/img/hamburguesa-01.png",
+        imagen: "./assets/img/empanada-01.png",
         categoria: {
             nombre: "Empanadas",
             id: "empanada"
@@ -293,7 +293,7 @@ const productosArray = [
     {
         id: "empanada-pollo-frita",
         titulo: "De Pollo Fritas",
-        imagen: "./assets/img/hamburguesa-01.png",
+        imagen: "./assets/img/empanada-01.png",
         categoria: {
             nombre: "Empanadas",
             id: "empanada"
@@ -303,7 +303,7 @@ const productosArray = [
     {
         id: "lomopizza",
         titulo: "LomoPizza",
-        imagen: "./assets/img/hamburguesa-03.png",
+        imagen: "./assets/img/lomopizza-01.png",
         categoria: {
             nombre: "LomoPizzas",
             id: "lomopizza"
@@ -409,7 +409,6 @@ cargarProductos();
 
 
 
-
 //boton agregar producto
 
 function actualizarBotonesAgregar() {
@@ -431,6 +430,7 @@ if (productosEnCarritoLS){
     productosEnCarrito = [];
 }
 
+
 function agregarAlCarrito(e){
 
     Toastify({
@@ -450,7 +450,7 @@ function agregarAlCarrito(e){
     
     const idBoton = e.currentTarget.id;
     const productoAgregado = productosArray.find(producto => producto.id === idBoton);
-    //console.log(productoAgregado); 
+   console.log(productoAgregado); 
 
     if(productosEnCarrito.some(producto => producto.id === idBoton)){
         const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
@@ -458,7 +458,6 @@ function agregarAlCarrito(e){
     }else{
         productoAgregado.cantidad = 1;
         productosEnCarrito.push(productoAgregado);
-
     }
    
     //console.log(productosEnCarrito);
@@ -469,7 +468,7 @@ function agregarAlCarrito(e){
 
 function actualizarNumeroPedidos (){
     let nuevoNumeroPedidos = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
-    //console.log(numeroPedidos);
+    //console.log(nuevoNumeroPedidos);
     numeroPedidos.innerText = nuevoNumeroPedidos;
 };
 

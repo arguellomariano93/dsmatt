@@ -4,6 +4,7 @@ const carritoConProductos = document.querySelector("#carrito-con-productos");
 const carritoVacio = document.querySelector("#carrito-vacio");
 const carritoAcciones = document.querySelector("#carrito-acciones");
 const montoTotal = document.querySelector("#monto-total");
+const botonComprar = document.querySelector('#carrito-acciones-comprar');
 
 function cargarProductosCarrito(){
     if (productosEnCarritos && productosEnCarritos.length > 0){
@@ -229,4 +230,64 @@ function formatearNumeroPrecio(importe){
         numeroFormateado = numeroFormateado.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
         return numeroFormateado;  
+}
+
+//funcion para enviar al whatsapp el pedido
+
+botonComprar.addEventListener("click", ()=>{
+    Swal.fire({
+        //title: '',
+        //text: '¡Muchas gracias por tu compra!',
+        //className:"spanes",
+        padding: ".5rem",
+        background: "transparent",
+        width: "100%",
+        imageUrl: "/assets/img/graciasDsMatt.gif",
+        imageWidth: "100vh",
+        imageHeight: "auto",        
+        timer: 2000, // La alerta se cerrará después de 3 segundos
+        showConfirmButton: false
+    }).then(() => {
+        comprarCarrito();
+    });    
+});
+
+function comprarCarrito() {   
+
+
+    let total = 0;
+    let mensajeIncial = "Hola DSMatt!! Me encantaria realizar el siguiente pedido: " + "%0A";
+
+    productosEnCarritos.forEach(producto => {
+        //console.log(producto);
+        let categoria = producto.categoria.nombre;
+        let titulo = producto.titulo;
+        let cantidad = producto.cantidad;
+        let subTotal = producto.cantidad * producto.precio;
+
+         total += subTotal;
+         //console.log(total)
+         totalFormateado = formatearNumeroPrecio(total);
+
+         mensajeIncial +=  "(" + cantidad + ") " + categoria + " " + titulo + " " 
+         +  "%0A";         
+    });
+
+        mensajeIncial += "%0A" + "El importe total de la compra es de $ " + totalFormateado;
+        //console.log(mensajeIncial);
+        let numeroCelular= "+543704863687";
+        let url = "https://wa.me/" + numeroCelular +"?text=" +  mensajeIncial;
+
+        window.open (url, '_blank').focus();
+
+    productosEnCarritos.length = 0;
+    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarritos));
+
+    window.location.href = "/menu.html";
+    
+    // contenedorCarritoVacio.classList.add("disabled");
+    // contenedorCarritoProductos.classList.add("disabled");
+    // contenedorCarritoAcciones.classList.add("disabled");
+    // contenedorCarritoComprado.classList.remove("disabled");
+
 }
