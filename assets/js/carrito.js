@@ -196,7 +196,7 @@ function restarCantidadCarrito(e){
             duration: 1500,
             //close: true,
             gravity: "top", // `top` or `bottom`
-            position: "right", // `left`, `center` or `right`
+            position: "center", // `left`, `center` or `right`
             stopOnFocus: true, // Prevents dismissing of toast on hover
             className: "delettoastify",
             offset: {

@@ -938,6 +938,27 @@ button {
 }
 
 
+.addtoastify{
+  color: var(--white-color); 
+  padding-block: 1rem;
+  border-radius: 2rem;
+  background: linear-gradient(to right, var(--first-color), var(--first-color));
+  font-size: .8rem;
+  font-weight: 800;
+  box-shadow: var(--box-shadow-first);
+ }
+ 
+ .delettoastify{
+   color: var(--white-color); 
+   padding-block: 1rem;
+   border-radius: 2rem;
+   background: linear-gradient(to right, var(--first-color), var(--first-color));
+   font-size: .8rem;
+   font-weight: 800;
+   box-shadow: var(--box-shadow-first);
+  }
+ 
+
 
 
 /*=============== BREAKPOINTS ===============*/
@@ -986,24 +1007,3 @@ button {
     width: 800px;
   }
 }
-
-
-.addtoastify{
- color: var(--white-color); 
- padding-block: 1rem;
- border-radius: 2rem;
- background: linear-gradient(to right, var(--first-color), var(--first-color));
- font-size: .8rem;
- font-weight: 800;
- box-shadow: var(--box-shadow-first);
-}
-
-.delettoastify{
-  color: var(--white-color); 
-  padding-block: 1rem;
-  border-radius: 2rem;
-  background: linear-gradient(to right, var(--first-color), var(--first-color));
-  font-size: .8rem;
-  font-weight: 800;
-  box-shadow: var(--box-shadow-first);
- }
