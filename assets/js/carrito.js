@@ -242,7 +242,7 @@ botonComprar.addEventListener("click", ()=>{
         padding: ".5rem",
         background: "transparent",
         width: "100%",
-        imageUrl: "/assets/img/graciasDsMatt.gif",
+        imageUrl: "./assets/img/graciasDsMatt.gif",
         imageWidth: "100vh",
         imageHeight: "auto",        
         timer: 2000, // La alerta se cerrará después de 3 segundos
@@ -283,7 +283,7 @@ function comprarCarrito() {
     productosEnCarritos.length = 0;
     localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarritos));
 
-    window.location.href = "/menu.html";
+    window.location.href = "./menu.html";
     
     // contenedorCarritoVacio.classList.add("disabled");
     // contenedorCarritoProductos.classList.add("disabled");
